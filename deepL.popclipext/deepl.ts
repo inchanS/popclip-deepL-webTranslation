@@ -29,7 +29,7 @@ export const options: Option[] = (() => {
     type: 'multiple',
     valueLabels: names,
     values: codes,
-    defaultValue: 'EN-US',
+    defaultValue: 'KO',
     description: "Select the target language for DeepL Website translation."
   }
   return [languageOption]
