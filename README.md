@@ -1,6 +1,7 @@
 # PopClip Extension - deepL translation
 ![GitHub stars](https://img.shields.io/github/stars/inchans/popclip-deepL-webTranslation?style=flat&logo=apachespark)
-![GitHub all releases](https://img.shields.io/github/downloads/inchanS/popclip-deepL-webTranslation/total?logo=github) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/inchanS/popclip-deepL-webTranslation?logo=rocket)  ![GitHub](https://img.shields.io/github/license/inchanS/popclip-deepL-webTranslation)
+![GitHub all releases](https://img.shields.io/github/downloads/inchanS/popclip-deepL-webTranslation/total?logo=github) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/inchanS/popclip-deepL-webTranslation?logo=rocket)  [![License](https://img.shields.io/badge/license-MIT-green)](./LICENSE)
+
 
 
 2024-10-10 기준, [PopClip Extensions Directory](https://www.popclip.app/extensions/)의 리스트에 있는 [DeepL Translate](https://www.deepl.com/en/translator) Extension이 제대로 작동하지 않는다.  
