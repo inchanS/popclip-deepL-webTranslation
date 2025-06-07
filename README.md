@@ -1,6 +1,6 @@
 # PopClip Extension - deepL translation
 ![GitHub stars](https://img.shields.io/github/stars/inchans/popclip-deepL-webTranslation?style=flat&logo=apachespark)
-![GitHub all releases](https://img.shields.io/github/downloads/inchanS/popclip-deepL-webTranslation/total?logo=github) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/inchanS/popclip-deepL-webTranslation?logo=rocket)  [![License](https://img.shields.io/badge/license-MIT-green)](./LICENSE)
+![GitHub all releases](https://img.shields.io/github/downloads/inchanS/popclip-deepL-webTranslation/total?logo=github) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/inchanS/popclip-deepL-webTranslation?logo=rocket)  ![License](https://img.shields.io/github/license/inchanS/popclip-deepl-webtranslation)
 
 
 
