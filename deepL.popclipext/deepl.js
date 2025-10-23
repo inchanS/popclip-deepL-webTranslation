@@ -5,18 +5,20 @@ langs.sort((a, b) => {
     return a.name.localeCompare(b.name);
 });
 
-function webTranslate(text, lang) {
-    // escape backslash before encoding (DeepL website needs this or it truncates at the slash)
-    const escapedText = text.replace(/\//g, '\\/');
-    const url = `https://www.deepl.com/translator#en/${lang}/${encodeURIComponent(escapedText)}`;
-    popclip.openUrl(url);
-}
-
-// our action
+// 2025년. 여름 이후 DeepL 웹사이트에서는 URL Get 방식의 파라미터를 완전히 지원하지 않게 되었다.
+// 이에 아래와 같이 방식을 바꾸었다. (이 방식이 싫다면 DeepL 앱을 설치 후, Popclip 공식 익스텐션을 설치하여 사용할 수 있다.)
+// PopClip 액션: 클립보드 복사 및 DeepL 웹사이트 열기
 exports.actions = [{
+    title: 'DeepL',
+    icon: 'iconify:simple-icons:deepl',
     requirements: ['text'],
     code: (input, options) => {
-        webTranslate(input.text, options.destlang);
+        popclip.copyText(input.text);
+
+        const lang = options.destlang;
+        const url = `https://www.deepl.com/${lang.toLowerCase()}/translator`;
+
+        popclip.openUrl(url);
     }
 }];
 
@@ -35,7 +37,6 @@ exports.options = (() => {
     return [languageOption];
 })();
 
-// build the language list from the json file
 function languageList() {
     const result = { codes: [], names: [] };
     for (const lang of langs) {
